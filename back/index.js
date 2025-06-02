@@ -26,7 +26,7 @@ app.get('/api/adress', async(req, res) => {
 
 const start = async () => {
     try{
-        await sequelize.authenticate()
+        await sequelize.authenticate() //проверяет, доступна ли бд
         console.log('db started')
 
         await sequelize.sync()
